@@ -40,6 +40,7 @@
     <h1>PREFEITURA MUNICIPAL DE PORTALEGRE/RN</h1>
     <h1>Demonstrativo da execução orçamentária e financeira oriundas "emendas pix"</h1>
     <h2>OBS.: Não houve emendas pix referentes aos anos de 2021; 2022; 2023 e até o momento não há recebimentos de emendas pix no exercício de 2025</h2>
+    <p id="data-atualizada" style="text-align: right; font-style: italic;"></p>
     <table id="emendas" class="display nowrap" style="width:100%">
         <thead>
             <tr>
@@ -81,5 +82,10 @@
             });
         });
     </script>
+    <script>
+    const hoje = new Date();
+    const dataFormatada = hoje.toLocaleDateString('pt-BR');
+    document.getElementById('data-atualizada').textContent = `Dados atualizados em: ${dataFormatada}`;
+</script>
 </body>
 </html>
