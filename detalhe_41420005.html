@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes da Emenda 41420005</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.flash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.print.min.js"></script>
+</head>
+<body>
+    <h1>PREFEITURA MUNICIPAL DE PORTALEGRE/RN</h1>
+	<h1>Demonstrativo da execução orçamentária e financeira oriundas "emendas pix"</h1>
+    <h2>Detalhes da Emenda: 41420005</h2>
+    <table id="detalhe" class="display nowrap" style="width:100%">
+        <thead>
+            <tr><th>Empenho</th><th>Empresa</th><th>Objeto</th><th>Vl. Empenhado</th><th>Vl. Liquidado</th><th>Vl. Pago</th></tr></thead><tbody><tr><td>427001</td><td>PONTES EMPREENDIMENTOS LTDA</td><td>Contratação de empresa especializada para a construção de um prédio público municipal para o funcionamento da sede do Pe
+lotão da Polícia Militar em Protalegre/RN</td><td>R$ 16.458,69</td><td>R$ 8.162,76</td><td>R$ 8.162,76</td></tr><tr><td>509010</td><td>PONTES EMPREENDIMENTOS LTDA</td><td>Contratação de empresa especializada para a construção de um prédio público municipal para o funcionamento da sede do Pe
+lotão da Polícia Militar em Protalegre/RN</td><td>R$ 39.747,66</td><td>R$ 13.269,25</td><td>R$ 13.269,25</td></tr><tr><td>604032</td><td>PONTES EMPREENDIMENTOS LTDA</td><td>Contratação de empresa especializada para a construção de um prédio público municipal para o funcionamento da sede do Pe
+lotão da Polícia Militar em Protalegre/RN</td><td>R$ 252.981,48</td><td>R$ 252.981,48</td><td>R$ 252.981,48</td></tr></tbody></table>
+<script>
+    $(document).ready(function() {
+        $('#detalhe').DataTable({
+            dom: 'Bfrtip',
+            buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
+            scrollX: true,
+            language: {
+                url: "//cdn.datatables.net/plug-ins/1.13.6/i18n/pt-BR.json"
+            }
+        });
+    });
+</script>
+</body>
+</html>
