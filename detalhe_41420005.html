@@ -42,6 +42,7 @@
 <body>
     <h1>PREFEITURA MUNICIPAL DE PORTALEGRE/RN</h1>
 	<h1>Demonstrativo da execução orçamentária e financeira oriundas "emendas pix"</h1>
+	<p id="data-atualizada" style="text-align: right; font-style: italic;"></p>
     <h2>Detalhes da Emenda: 41420005</h2>
     <table id="detalhe" class="display nowrap" style="width:100%">
         <thead>
@@ -60,6 +61,11 @@ lotão da Polícia Militar em Protalegre/RN</td><td>R$ 252.981,48</td><td>R$ 252
             }
         });
     });
+</script>
+	<script>
+    const hoje = new Date();
+    const dataFormatada = hoje.toLocaleDateString('pt-BR');
+    document.getElementById('data-atualizada').textContent = `Dados atualizados em: ${dataFormatada}`;
 </script>
 </body>
 </html>
